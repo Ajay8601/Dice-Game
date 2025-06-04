@@ -1,0 +1,27 @@
+.container{
+    max-width: 1180px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+.diceName h1{
+    font-size: 96px;
+    white-space: nowrap;
+}
+.diceName button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 18px;
+    min-width: 220px;
+    font-weight: 700;
+    font-size: 23px;
+    border:none;
+}
+.diceName button:hover{
+    background-color: white;
+
+    color: black;
+    border: 1px solid black;
+}
