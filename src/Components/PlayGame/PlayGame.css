@@ -1,20 +1,20 @@
-.ScoreContainer{
+.ScoreContainer {
     max-width: 220px;
     text-align: center;
 }
 
-.ScoreContainer h1{
+.ScoreContainer h1 {
     font-size: 100px;
     line-height: 100px;
 }
 
-.ScoreContainer p{
+.ScoreContainer p {
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     white-space: nowrap;
 }
 
-.boxes{
+.boxes {
     height: 72px;
     width: 72px;
     border: 1px solid black;
@@ -23,29 +23,34 @@
     justify-content: center;
     font-size: 24px;
     font-weight: 700;
-   cursor: pointer;
+    cursor: pointer;
 }
-.box{
+
+.box {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 60px;
+    justify-content: center;
 }
-.header{
+
+.header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
-    margin-left: 250px;
-    margin-top: 20px;
-
-
+    margin: 20px auto 0 auto;
+    padding: 0 20px;
 }
-.error{
+
+.error {
     color: red;
     font-size: 18px;
     font-weight: 300;
     position: absolute;
 }
-.Header p{
+
+.Header p {
     display: flex;
     margin: 10px;
     font-size: 24px;
@@ -53,18 +58,19 @@
     justify-content: end;
 }
 
-.diceContainer{
+.diceContainer {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.diceContainer p{
+
+.diceContainer p {
     font-size: 24px;
-
+    text-align: center;
 }
-.btns{
+
+.btns {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -72,43 +78,110 @@
     margin: 0 auto;
     font-size: 18px;
 }
-.btn-primary1{
-    color:black;
+
+.btn-primary1 {
+    color: black;
     background-color: white;
     padding: 5px;
     font-weight: 500;
+    border: none;
 }
-.btn-primary1:hover{
-    color: white;
-    background: radial-gradient(circle,black ,white);
-    background-color: black;
 
+.btn-primary1:hover {
+    color: white;
+    background: radial-gradient(circle, black, white);
+    background-color: black;
 }
-.btn-primary2{
-    color:white;
+
+.btn-primary2 {
+    color: white;
     background-color: black;
     padding: 5px;
     font-weight: 500;
+    border: none;
 }
-.btn-primary2:hover{
 
+.btn-primary2:hover {
     color: black;
-    background: radial-gradient(circle,white, black );
-
-
+    background: radial-gradient(circle, white, black);
 }
-.Rules{
-    background-color:#fbf1f1 ;
+
+.Rules {
+    background-color: #fbf1f1;
     padding: 10px;
     max-width: 800px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     border-radius: 10px;
 }
-.Rules h2{
+
+.Rules h2 {
     font-size: 24px;
 }
-.text_p{
+
+.text_p {
     margin-top: 24px;
-    line-height: 6px;
+    line-height: 1.6;
+}
+
+/* ✅ Responsive Design Starts Here */
+@media (max-width: 768px) {
+    .ScoreContainer h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .ScoreContainer p,
+    .diceContainer p,
+    .Header p {
+        font-size: 18px;
+    }
+
+    .boxes {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+    }
+
+    .btns {
+        width: 120px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ScoreContainer h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .ScoreContainer p,
+    .diceContainer p,
+    .Header p {
+        font-size: 16px;
+    }
+
+    .boxes {
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+    }
+
+    .btns {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .Rules h2 {
+        font-size: 20px;
+    }
+
+    .Rules {
+        padding: 10px;
+        margin: 10px;
+    }
 }

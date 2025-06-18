@@ -5,8 +5,9 @@ import './Startgame.css';
 const Startgame = ({ toggle }) => {
     return (
         <div className='container'>
-            <div>
-                <img src="/dices 1.png" alt="dice_image" />
+            <div >
+                <img src="/dices 1.png" alt="dice_image" 
+                className='image_container'/>
             </div>
             <div className='diceName'>
                 <h1>Dice Game</h1>
